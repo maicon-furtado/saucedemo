@@ -1,0 +1,5 @@
+.idea/
+target/
+cucumber-reports/
+*.iml
+dependency-reduced-pom.xml
