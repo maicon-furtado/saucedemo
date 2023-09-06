@@ -1,6 +1,6 @@
-package com.saucedemo.qa.utils;
+package com.saucedemo.qa.steps.utils;
 
-import static com.saucedemo.qa.utils.Wait.getWait;
+import static com.saucedemo.qa.steps.utils.Wait.getWait;
 
 import java.util.ArrayList;
 import org.openqa.selenium.remote.RemoteWebDriver;

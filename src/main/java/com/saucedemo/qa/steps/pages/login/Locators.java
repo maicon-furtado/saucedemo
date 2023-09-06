@@ -1,4 +1,4 @@
-package com.saucedemo.qa.pages.login;
+package com.saucedemo.qa.steps.pages.login;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

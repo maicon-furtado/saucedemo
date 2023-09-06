@@ -1,12 +1,10 @@
-package com.saucedemo.qa.pages.login;
+package com.saucedemo.qa.steps.pages.login;
 
-import com.saucedemo.qa.World;
+import com.saucedemo.qa.steps.World;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static com.saucedemo.qa.pages.login.Locators.*;
-import static com.saucedemo.qa.utils.Wait.getWait;
+import static com.saucedemo.qa.steps.utils.Wait.getWait;
 
 public class Actions {
   Locators locators = new Locators();
@@ -28,8 +26,8 @@ public class Actions {
   }
 
   public void loginAsRegularUser() {
-    locators.input_user.sendKeys(STANDARD_USER);
-    locators.input_password.sendKeys(STANDARD_USER_PASSWORD);
+    locators.input_user.sendKeys(Locators.STANDARD_USER);
+    locators.input_password.sendKeys(Locators.STANDARD_USER_PASSWORD);
     locators.button_login.click();
   }
 

@@ -1,10 +1,10 @@
-package com.saucedemo.qa.pages.products;
+package com.saucedemo.qa.steps.pages.products;
 
-import static com.saucedemo.qa.utils.Wait.getWait;
+import static com.saucedemo.qa.steps.utils.Wait.getWait;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-import com.saucedemo.qa.World;
+import com.saucedemo.qa.steps.World;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;

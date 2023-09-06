@@ -1,12 +1,11 @@
-package com.saucedemo.qa.pages.login;
+package com.saucedemo.qa.steps.pages.login;
 
 import com.google.inject.Inject;
-import com.saucedemo.qa.World;
+import com.saucedemo.qa.steps.World;
+import com.saucedemo.qa.steps.utils.Environment;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-import static com.saucedemo.qa.utils.Environment.getLandingPage;
 
 public class Steps {
 
@@ -21,7 +20,7 @@ public class Steps {
 
   @Given("I am in login page")
   public void i_am_in_login_page() {
-      world.getDriver().get(getLandingPage());
+      world.getDriver().get(Environment.getLandingPage());
       actions.expectToBeInLoginPage();
     //  world.getScenario().attach(world.getDriver().getScreenshotAs(OutputType.BYTES), "image/png", "First Page");
     }

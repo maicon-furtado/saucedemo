@@ -1,4 +1,4 @@
-package com.saucedemo.qa.pages.products;
+package com.saucedemo.qa.steps.pages.products;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

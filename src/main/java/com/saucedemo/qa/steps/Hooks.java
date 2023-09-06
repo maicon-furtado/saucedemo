@@ -1,6 +1,6 @@
-package com.saucedemo.qa;
+package com.saucedemo.qa.steps;
 
-import static com.saucedemo.qa.utils.Environment.getHubUrl;
+import static com.saucedemo.qa.steps.utils.Environment.getHubUrl;
 
 import com.google.inject.Inject;
 import io.cucumber.java.After;
@@ -10,7 +10,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Hooks {
@@ -25,7 +24,6 @@ public class Hooks {
   @Before
   public void setup(Scenario scenario) throws MalformedURLException {
     ChromeOptions chromeOptions = new ChromeOptions();
-    chromeOptions.setCapability(CapabilityType.VERSION, "83.0.4103.61");
     world.setDriver(new RemoteWebDriver(new URL(getHubUrl()),  chromeOptions));
     world.setScenario(scenario);
   }

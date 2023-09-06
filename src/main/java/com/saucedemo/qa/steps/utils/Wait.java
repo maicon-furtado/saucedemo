@@ -1,4 +1,4 @@
-package com.saucedemo.qa.utils;
+package com.saucedemo.qa.steps.utils;
 
 import java.time.Duration;
 import org.openqa.selenium.remote.RemoteWebDriver;

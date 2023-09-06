@@ -1,4 +1,4 @@
-package com.saucedemo.qa;
+package com.saucedemo.qa.steps;
 
 import io.cucumber.guice.ScenarioScoped;
 import io.cucumber.java.Scenario;

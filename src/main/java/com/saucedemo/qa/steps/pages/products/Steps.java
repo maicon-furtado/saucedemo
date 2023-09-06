@@ -1,7 +1,7 @@
-package com.saucedemo.qa.pages.products;
+package com.saucedemo.qa.steps.pages.products;
 
 import com.google.inject.Inject;
-import com.saucedemo.qa.World;
+import com.saucedemo.qa.steps.World;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
